@@ -56,7 +56,7 @@ h3 {
 
 h4 {
   text-align: center;
-  font-family: "Roboto", cursive;
+  font-family: ivypresto-display, serif;
   font-size: 2rem;
   margin: 0;
 }
@@ -373,6 +373,12 @@ a {
   font-family: Whisper, cursive;
 }
 
+@media screen and (orientation: landscape) {
+  .content__subtitle {
+    font-size: 5vh;
+  }
+}
+
 #hero_img {
   width: 100%;
   height: auto;
@@ -428,7 +434,7 @@ a {
   text-align: center;
   font-size: 1rem;
   margin: 2vh auto;
-  font-family: "Handlee", cursive;
+  font-family: ivypresto-display, serif;
 }
 
 .content__title_index {
@@ -675,7 +681,7 @@ a {
   min-width: 75px;
 }
 
-.lilac {
+.green {
   margin: 0 0.25rem;
   padding: 0.25rem;
   border-radius: 5px;
@@ -683,7 +689,7 @@ a {
   border-width: 1px;
   border-color: #4a4a4a;
   color: white;
-  background-color: #c0a4c9;
+  background-color: #1bae36;
   line-height: 2;
   min-width: 75px;
 }
