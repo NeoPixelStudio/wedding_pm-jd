@@ -295,7 +295,7 @@ a {
   max-width: 75px;
   height: auto;
   top: 40%;
-  z-index: 1;
+  z-index: 99;
 }
 
 #play_button {
