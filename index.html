@@ -41,11 +41,27 @@
         <div id="video_container">
             <!-- <video class="video" id="video" playsinline loop src="video/ww_p&j.mp4"></video> -->
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/bvPpyFSXA7A?autoplay=1&mute=1&loop=1&playlist=bvPpyFSXA7A&controls=0&showinfo=0&mute=1&vq=hd1920" 
+                <!-- <iframe src="https://www.youtube.com/embed/bvPpyFSXA7A?autoplay=1&mute=1&loop=1&playlist=bvPpyFSXA7A&controls=0&showinfo=0&mute=1&vq=hd1920" 
                         frameborder="0" 
                         allow="autoplay; fullscreen"
                         allowfullscreen>
-                </iframe>
+                </iframe> -->
+                
+                <iframe src="https://www.youtube.com/embed/bvPpyFSXA7A?enablejsapi=1&autoplay=1&mute=1&loop=1&playlist=bvPpyFSXA7A&controls=0&showinfo=0&mute=1" 
+                    frameborder="0"
+                    allow="autoplay; fullscreen"
+                    allowfullscreen>
+                </iframe> 
+                 
+                <script src="https://www.youtube.com/iframe_api"></script> 
+                <script>
+                    function onYouTubeIframeAPIReady() { var player = new YT.Player('video-frame', { events: { 'onReady': onPlayerReady, 'onStateChange': onPlayerStateChange } }); }
+                    function onPlayerReady(event) {
+                        var player = event.target;
+                        player.setPlaybackQuality('hd1080');
+                    }
+                </script>
+
             </div>
             <audio id="audio" src="audio/song.m4a"></audio>
 
